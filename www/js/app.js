@@ -29,6 +29,12 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
   // Each state's controller can be found in controllers.js
   $stateProvider
 
+  // landing page
+  .state('teerleer', {
+    url: "/teerleer",
+    templateUrl: "templates/teerleer.html"
+  })
+
     // setup an abstract state for the tabs directive
     .state('tab', {
       url: "/tab",
@@ -38,21 +44,21 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
 
     // Each tab has its own nav history stack:
 
-    .state('tab.dash', {
-      url: '/dash',
+    .state('tab.comptes', {
+      url: '/comptes',
       views: {
         'tab-dash': {
-          templateUrl: 'templates/tab-dash.html',
+          templateUrl: 'templates/tab-comptes.html',
           controller: 'DashCtrl'
         }
       }
     })
 
-    .state('tab.friends', {
-      url: '/friends',
+    .state('tab.objectifs', {
+      url: '/objectifs',
       views: {
         'tab-friends': {
-          templateUrl: 'templates/tab-friends.html',
+          templateUrl: 'templates/tab-objectifs.html',
           controller: 'FriendsCtrl'
         }
       }
@@ -67,18 +73,17 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
       }
     })
 
-    .state('tab.account', {
-      url: '/account',
+    .state('tab.parametre', {
+      url: '/parametre',
       views: {
-        'tab-account': {
-          templateUrl: 'templates/tab-account.html',
+        'tab-parametre': {
+          templateUrl: 'templates/tab-parametre.html',
           controller: 'AccountCtrl'
         }
       }
     });
 
   // if none of the above states are matched, use this as the fallback
-  $urlRouterProvider.otherwise('/tab/dash');
+  $urlRouterProvider.otherwise('/teerleer');
 
 });
-

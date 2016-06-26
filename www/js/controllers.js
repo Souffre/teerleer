@@ -12,4 +12,14 @@ angular.module('starter.controllers', [])
 })
 
 .controller('AccountCtrl', function($scope) {
+})
+
+.controller('TabsCtrl', function($scope, $state) {
+  $scope.signIn = function() {
+     $state.go('tab.dash');
+  };
+
+  $scope.signOut = function() {
+     $state.go('teerleer');
+  };
 });

@@ -1,27 +1,30 @@
-<!-- 
-  Create tabs with an icon and label, using the tabs-positive style. 
-  Each tab's child <ion-nav-view> directive will have its own 
+<!--
+  Create tabs with an icon and label, using the tabs-positive style.
+  Each tab's child <ion-nav-view> directive will have its own
   navigation history that also transitions its views in and out.
 -->
+<ion-header-bar class="bar bar-header">
+  <h1 class="title">Teerleer</h1>
+  <button class="button icon ion-ios-close-outline" ng-click="signOut()"></button>
+</ion-header-bar>
+
 <ion-tabs class="tabs-icon-top">
 
-
   <!-- Dashboard Tab -->
-  <ion-tab title="Dashboard" icon="icon ion-home" href="#/tab/dash">
-    <ion-nav-view name="tab-dash"></ion-nav-view>
+  <ion-tab title="Comptes" icon="icon ion-home" href="#/tab/comptes">
+    <ion-nav-view name="tab-comptes"></ion-nav-view>
   </ion-tab>
 
 
   <!-- Friends Tab -->
-  <ion-tab title="Friends" icon="icon ion-heart" href="#/tab/friends">
-    <ion-nav-view name="tab-friends"></ion-nav-view>
+  <ion-tab title="Objectif" icon="icon ion-heart" href="#/tab/objectifs">
+    <ion-nav-view name="tab-objectifs"></ion-nav-view>
   </ion-tab>
 
 
   <!-- Account Tab -->
-  <ion-tab title="Account" icon="icon ion-gear-b" href="#/tab/account">
-    <ion-nav-view name="tab-account"></ion-nav-view>
+  <ion-tab title="Paramètres" icon="icon ion-gear-b" href="#/tab/parametre">
+    <ion-nav-view name="tab-parametre"></ion-nav-view>
   </ion-tab>
-
 
 </ion-tabs>

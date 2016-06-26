@@ -1,7 +1,7 @@
 {
   "name": "Teerleer",
   "description": "Appli pour tirelire connectée",
-  "repository": "",
+  "repository": " https://github.com/Souffre/teerleer.git",
   "logo": "http://ionicframework.com/img/ionic-logo-blog.png",
   "keywords": ["ionic", "static"]
 }
