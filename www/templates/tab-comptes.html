@@ -1,8 +1,9 @@
-<ion-view title="Friends">
+<ion-view title="Comptes">
   <ion-content>
     <ion-list>
-      <ion-item ng-repeat="friend in friends" type="item-text-wrap" href="#/tab/objectif/{{friend.id}}">
-        {{friend.name}}
+      <ion-item ng-repeat="compte in comptes" type="item-text-wrap" href="#/tab/comptes/{{compte.id}}">
+        <label class="" float="left">{{compte.name}}</label>
+        <p class="subdued" color="green">{{compte.montant}}€</p>
       </ion-item>
     </ion-list>
   </ion-content>

@@ -48,9 +48,9 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
     .state('tab.comptes', {
       url: '/comptes',
       views: {
-        'tab-dash': {
+        'tab-comptes': {
           templateUrl: 'templates/tab-comptes.html',
-          controller: 'DashCtrl'
+          controller: 'ComptesCtrl'
         }
       }
     })
@@ -60,16 +60,16 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
       views: {
         'tab-objectif': {
           templateUrl: 'templates/tab-objectif.html',
-          controller: 'FriendsCtrl'
+          controller: 'ObjectifCtrl'
         }
       }
     })
     .state('tab.friend-detail', {
       url: '/friend/:friendId',
       views: {
-        'tab-friends': {
-          templateUrl: 'templates/friend-detail.html',
-          controller: 'FriendDetailCtrl'
+        'tab-comptes': {
+          templateUrl: 'templates/comptes-detail.html',
+          controller: 'ComptesDetailCtrl'
         }
       }
     })
@@ -79,7 +79,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
       views: {
         'tab-parametre': {
           templateUrl: 'templates/tab-parametre.html',
-          controller: 'AccountCtrl'
+          controller: 'ParametreCtrl'
         }
       }
     });
